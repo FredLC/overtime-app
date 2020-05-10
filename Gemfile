@@ -22,6 +22,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise', '~> 4.7', '>= 4.7.1'
 
+gem 'bootstrap', '~> 4.4.1'
+
+gem 'jquery-rails'
+
 group :development, :test do
   
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
