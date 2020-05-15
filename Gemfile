@@ -28,6 +28,10 @@ gem 'jquery-rails'
 
 gem 'gritter', '~> 1.2'
 
+gem 'administrate', '~> 0.13.0'
+
+gem 'bourbon'
+
 group :development, :test do
   
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
