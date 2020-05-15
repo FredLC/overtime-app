@@ -1,17 +1,17 @@
 require 'rails_helper'
 
-class UserTest < ActiveSupport::TestCase
-  describe "creation" do
-  	before do
-  		@user = User.create(
-  			email: "test@test.com", 
-  			password: "asdfasdf", 
-  			password_confirmation: "asdfasdf",
-  			first_name: "Joe",
-  			last_name: "Mambre"
-  			)
-  	end
+RSpec.describe User, type: :model do
+  before do
+    @user = User.create(
+      email: "test@test.com", 
+      password: "asdfasdf", 
+      password_confirmation: "asdfasdf",
+      first_name: "Joe",
+      last_name: "Mambre"
+      )
+  end
 
+  describe "creation" do
   	it "can be created" do	
   		expect(@user).to be_valid
   	end
@@ -21,5 +21,11 @@ class UserTest < ActiveSupport::TestCase
   		@user.last_name = nil
   		expect(@user).to_not be_valid
   	end
+  end
+
+  describe "custom name methods" do
+    it "has a full name method that combines first and last name" do
+      expect(@user.full_name).to eq("MAMBRE, JOE")
+    end
   end
 end
