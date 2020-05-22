@@ -34,6 +34,8 @@ gem 'bourbon'
 
 gem 'pundit', '~> 2.1'
 
+gem "font-awesome-rails"
+
 group :development, :test do
   
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
