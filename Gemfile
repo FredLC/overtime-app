@@ -32,6 +32,8 @@ gem 'administrate', '~> 0.13.0'
 
 gem 'bourbon'
 
+gem 'pundit', '~> 2.1'
+
 group :development, :test do
   
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
