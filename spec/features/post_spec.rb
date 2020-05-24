@@ -38,7 +38,7 @@ describe 'navigate' do
         email: "not@authorized.com",
         password: "asdfasdf",
         password_confirmation: "asdfasdf",
-        phone: "155555555")
+        phone: "1555555555")
 
       post_from_other_user = Post.create(date: Date.today, rationale: "Should not be seen", user_id: other_user.id, overtime_request: 3.5)
 
