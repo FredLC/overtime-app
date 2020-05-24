@@ -38,6 +38,8 @@ gem "font-awesome-rails"
 
 gem 'twilio-ruby', '~> 5.35'
 
+gem 'kaminari', '~> 1.2'
+
 group :development, :test do
   
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
