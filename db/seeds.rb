@@ -3,7 +3,8 @@
   			password: "asdfasdf", 
   			password_confirmation: "asdfasdf",
   			first_name: "Jonathan",
-  			last_name: "Mambre"
+  			last_name: "Mambre",
+        phone: "14187411932"
   			)
 
 
@@ -14,7 +15,8 @@ AdminUser.create(
   			password: "asdfasdf", 
   			password_confirmation: "asdfasdf",
   			first_name: "Admin",
-  			last_name: "Mambre"
+  			last_name: "Mambre",
+        phone: "14187411932"
   			)
 
 
