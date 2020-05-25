@@ -3,4 +3,11 @@
 	<div class="pending-homepage row">
 		<%= render partial: "pending_approval", locals: { pending_approvals: @pending_approvals } %>
 	</div>
+
+	<h2>Confirmation Log</h2>
+	<div class="pending-homepage row">
+		<%= render partial: "confirmation_log", locals: { recent_audit_items: @recent_audit_items } %>
+	</div>
+
+	<%= link_to 'All Items', audit_logs_path, class: 'btn btn-primary mb-5' %>
 </div>
