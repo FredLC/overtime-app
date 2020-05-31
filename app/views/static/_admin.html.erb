@@ -1,8 +1,12 @@
 <div class="container-fluid">
 	<h2>Items Pending Approval</h2>
-	<div class="pending-homepage row">
-		<%= render partial: "pending_approval", locals: { pending_approvals: @pending_approvals } %>
-	</div>
+	<% if @pending_approvals.count > 0 %>
+		<div class="pending-homepage row">
+			<%= render partial: "pending_approval", locals: { pending_approvals: @pending_approvals } %>
+		</div>
+	<% else %>
+		<p class="mb-5 mt-3">No Items Pending</p>
+	<% end %>
 
 	<h2>Confirmation Log</h2>
 	<div class="pending-homepage row">
